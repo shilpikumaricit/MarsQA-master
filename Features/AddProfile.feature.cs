@@ -35,11 +35,7 @@ namespace MarsQA.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-<<<<<<< HEAD
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "SellerProfilePage", " As a Seller\r\n I want to add my profile details", ProgrammingLanguage.CSharp, ((string[])(null)));
-=======
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "SellerProfilePage", " As a Seller\n I want to add my profile details", ProgrammingLanguage.CSharp, ((string[])(null)));
->>>>>>> 7e8bbc1... Initial check-in of module MarsQA
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -134,15 +130,6 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.CategoryAttribute("Negative")]
         [NUnit.Framework.CategoryAttribute("test")]
         [NUnit.Framework.CategoryAttribute("case")]
-<<<<<<< HEAD
-        public virtual void AddBlankInDescriptionField()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Negative",
-                    "test",
-                    "case"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-=======
         [NUnit.Framework.TestCaseAttribute("", null)]
         public virtual void AddBlankInDescriptionField(string description, string[] exampleTags)
         {
@@ -157,7 +144,6 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("description", description);
->>>>>>> 7e8bbc1... Initial check-in of module MarsQA
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add blank in Description field", null, tagsOfScenario, argumentsOfScenario);
 #line 16
   this.ScenarioInitialize(scenarioInfo);
@@ -203,17 +189,6 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.CategoryAttribute("Positive")]
         [NUnit.Framework.CategoryAttribute("test")]
         [NUnit.Framework.CategoryAttribute("case")]
-<<<<<<< HEAD
-        public virtual void AddLanguageInLanguageField()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Positive",
-                    "test",
-                    "case"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add language In Language field", null, tagsOfScenario, argumentsOfScenario);
-#line 24
-=======
         [NUnit.Framework.TestCaseAttribute("English", null)]
         public virtual void AddLanguageInLanguageField(string language, string[] exampleTags)
         {
@@ -230,7 +205,6 @@ this.ScenarioInitialize(scenarioInfo);
             argumentsOfScenario.Add("language", language);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add language In Language field", null, tagsOfScenario, argumentsOfScenario);
 #line 27
->>>>>>> 7e8bbc1... Initial check-in of module MarsQA
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -250,18 +224,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-<<<<<<< HEAD
-#line 25
-    testRunner.Given("as a seller loging to Mars Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 26
-    testRunner.And("seller navigate to profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 27
-    testRunner.When("seller click on the add language button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 28
-=======
 #line 28
     testRunner.Given("as a seller loging to Mars Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -272,7 +234,6 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.When("seller click on the add language button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 31
->>>>>>> 7e8bbc1... Initial check-in of module MarsQA
     testRunner.Then("seller should able to add language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -282,15 +243,6 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add Duplicate language in language field")]
         [NUnit.Framework.CategoryAttribute("Negative")]
-<<<<<<< HEAD
-        public virtual void AddDuplicateLanguageInLanguageField()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Negative"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Duplicate language in language field", null, tagsOfScenario, argumentsOfScenario);
-#line 31
-=======
         [NUnit.Framework.TestCaseAttribute("English", null)]
         public virtual void AddDuplicateLanguageInLanguageField(string language, string[] exampleTags)
         {
@@ -305,7 +257,6 @@ this.ScenarioInitialize(scenarioInfo);
             argumentsOfScenario.Add("language", language);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Duplicate language in language field", null, tagsOfScenario, argumentsOfScenario);
 #line 37
->>>>>>> 7e8bbc1... Initial check-in of module MarsQA
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -325,18 +276,6 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-<<<<<<< HEAD
-#line 32
-   testRunner.Given("as a seller loging to Mars Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 33
-   testRunner.And("seller navigate to profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 34
-   testRunner.When("seller click on the add language button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 35
-=======
 #line 38
    testRunner.Given("as a seller loging to Mars Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -347,7 +286,6 @@ this.ScenarioInitialize(scenarioInfo);
    testRunner.When("seller click on the add language button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 41
->>>>>>> 7e8bbc1... Initial check-in of module MarsQA
    testRunner.Then("seller should not be able to add language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
